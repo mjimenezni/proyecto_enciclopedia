@@ -18,7 +18,9 @@
   </head>
   <body>
     <header class="container-fluid jumbotron">
-      <h1 class="display-4 text-center">DESARROLLO FRONT-END</h1>
+      <h1 class="display-4 text-center font-weight-bolder">
+        DESARROLLO FRONT-END
+      </h1>
     </header>
 
     <nav class="container-fluid navbar navbar-expand-md bg-dark navbar-dark">
@@ -66,7 +68,7 @@
         utilizados en Frontend son
         <strong
           ><a href="./html.html">HTML</a>, <a href="./css.html">CSS</a> y
-          JavaScript</strong
+          <a href="./javascript.html">JavaScript</a> </strong
         >, siendo los dos primeros lenguajes de marcado, y el tercero es un
         lenguaje de programación.
       </p>
@@ -79,9 +81,46 @@
         Estas tecnologías han ido evolucionando, y en la actualidad se utilizan
         además <strong>frameworks y librerías JavaScript</strong> como Angular,
         ReactJS, Vue.js. o Node.js , <strong>frameworks HTML y CSS</strong> como
-        Bootstrap o Foundation o <strong>preprocesadores CSS</strong> como Sass,
-        Less o Stylus, para facilitar el desarrollo y hacerlos más modernos.
+        Bootstrap o Foundation o
+        <strong
+          ><a href="./preprocesadores.html">preprocesadores CSS</a></strong
+        >
+        como <a href="./sass.html">Sass</a>, <a href="./less.html">Less</a> o
+        Stylus, para facilitar el desarrollo y hacerlos más modernos.
       </p>
+      <button
+        type="button"
+        class="btn btn-primary mx-auto d-block"
+        data-toggle="modal"
+        data-target="#myModal"
+      >
+        Saber más...
+      </button>
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Saber más...</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                ×
+              </button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Pronto añadiremos contenido nuevo. Gracias por visitarnos
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer
       class="container-fluid jumbotron text-center"
