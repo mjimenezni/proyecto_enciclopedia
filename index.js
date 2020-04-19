@@ -1,7 +1,11 @@
 const name = 'Bienvenidos';
 console.log(`${name}`);
 
-//Añado un evento al botón para que al hacer click muestre la ventana modal utilizando Bootstrap 4
+/*Añado un evento al botón para que al hacer click le añada el atributo de datos "target" 
+utilizado por Bootstrap 4 para mostrar la ventana modal*/
 document
-  .querySelector('#myBtn')
-  .addEventListener('click', () => document.querySelector('#myModal').modal());
+  .querySelector('#modal')
+  .addEventListener(
+    'click',
+    () => (document.querySelector('#modal').dataset.target = '#myModal')
+  );

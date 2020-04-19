@@ -7,22 +7,24 @@
 
     <link
       rel="stylesheet"
-      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="style.css" />
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/popper.js/dist/popper.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="./index.js" defer></script>
   </head>
   <body>
+    <!--header-->
     <header class="container-fluid jumbotron">
       <h1 class="display-4 text-center font-weight-bolder">
         DESARROLLO FRONT-END
       </h1>
     </header>
 
+    <!--nav-->
     <nav class="container-fluid navbar navbar-expand-md bg-dark navbar-dark">
       <!-- Brand -->
       <a class="navbar-brand" href="./index.html">Inicio</a>
@@ -85,14 +87,18 @@
         <strong
           ><a href="./preprocesadores.html">preprocesadores CSS</a></strong
         >
-        como <a href="./sass.html">Sass</a>, <a href="./less.html">Less</a> o
-        Stylus, para facilitar el desarrollo y hacerlos más modernos.
+        como
+        <strong
+          ><a href="./sass.html">Sass</a>,
+          <a href="./less.html">Less</a></strong
+        >
+        o Stylus, para facilitar el desarrollo y hacerlos más modernos.
       </p>
       <button
+        id="modal"
         type="button"
         class="btn btn-primary mx-auto d-block"
         data-toggle="modal"
-        data-target="#myModal"
       >
         Saber más...
       </button>
