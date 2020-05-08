@@ -1,19 +1,83 @@
+header {
+  background: url('./img/desarrollo-web.jpg');
+  margin: 0;
+}
+nav {
+  padding-top: 0;
+  margin: 0;
+}
+.titulo {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.3rem;
+}
+
 main {
   min-height: 320px;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 main h2 {
   margin-bottom: 20px;
 }
-header.jumbotron {
-  background: url('./img/desarrollo-web.jpg');
-}
-header h1 {
-  background-color: rgba(255, 255, 255, 0.7);
-}
+
 pre {
   background-color: gainsboro;
 }
 footer {
-  margin-top: 50px;
+  margin-top: 20px;
+  border-top: 1px solid gray;
+  padding: 20px;
+  background-color: #71a7d2;
+  border-radius: 0.3rem;
+}
+
+#clipped {
+  width: 80%;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+.img-thumbnail {
+  width: 40px;
+}
+.jumbotron {
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+/*Animación de enlaces de menú lateral*/
+aside nav ul li a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
+}
+aside nav ul a:hover,
+aside nav ul a:focus {
+  background-size: 100% 2px;
+}
+
+/*Animación del logo en index.html*/
+.logo {
+  animation: logo ease-in-out 2s;
+}
+@keyframes logo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  99% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
 }
