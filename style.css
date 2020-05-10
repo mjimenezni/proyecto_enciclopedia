@@ -9,6 +9,8 @@ nav {
 .titulo {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 0.3rem;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 main {
@@ -57,9 +59,18 @@ aside nav ul a:focus {
   background-size: 100% 2px;
 }
 
+/*Efecto zoom en imágenes*/
+zoom {
+  width: 128;
+  overflow: hidden;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
 /*Animación del logo en index.html*/
 .logo {
   animation: logo ease-in-out 2s;
+  width: 80%;
 }
 @keyframes logo {
   0% {
@@ -79,5 +90,36 @@ aside nav ul a:focus {
   }
   100% {
     opacity: 1;
+  }
+}
+
+.logo-secundario {
+  width: 64px;
+  margin-left: 10px;
+}
+
+.captura-codigo {
+  border: 1px solid gray;
+}
+
+/*media queries*/
+@media (max-width: 576px) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  header h1 {
+    font-size: 1.5em;
+  }
+  header h4 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 340px) {
+  header h1 {
+    font-size: 1.2em;
+  }
+  header h4 {
+    font-size: 0.7em;
   }
 }
