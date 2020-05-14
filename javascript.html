@@ -162,17 +162,32 @@
               <img
                 src="./img/BEich.jpg"
                 alt="Retrato de Brendan Eich"
-                class="rounded-circle mx-auto d-block"
+                class="rounded-circle mx-auto d-block img-fluid"
                 title="Brendan Eich"
               />
             </div>
           </div>
           <div>
             <p>Un ejemplo de código JavaScript embebido en una página HTML</p>
-            <img
-              src="./img/sintaxisJS.JPG"
-              alt="Ejemplo de código en JavaScript"
-            />
+            <picture class="d-block mx-auto img-fluid">
+              <source
+                srcset="./img/sintaxisJS490.JPG"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/sintaxisJS430.JPG"
+                media="(min-width: 576px)"
+              />
+              <source
+                srcset="./img/sintaxisJS260.JPG"
+                media="(max-width: 576px)"
+              />
+              <img
+                src="./img/sintaxisJS490.JPG"
+                alt="Ejemplo de código en JavaScript"
+                class="d-block mx-auto img-fluid"
+              />
+            </picture>
           </div>
         </article>
         <div class="col-sm-1"></div>

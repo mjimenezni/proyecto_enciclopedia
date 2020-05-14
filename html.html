@@ -138,33 +138,39 @@
           <div class="row">
             <p>Una página HTML se dividirá en bloques que vienen definidos por <strong>etiquetas</strong> y es el
             propio explorador el que es capaz de interpretar las etiquetas para mostrarlas y darle el formato necesario.</p>
-            <img src="./img/sintaxisHTML.JPG" alt="Sintaxis HTML" class="d-block mx-auto">
+            <img src="./img/sintaxisHTML.JPG" alt="Sintaxis HTML" class="d-block mx-auto img-fluid">
 
           </div>
           <br>
           <div class="row">
             <p>El esqueleto de una página en HTML5 es:</p>
-            <img src="./img/esqueletoHTML.JPG" alt="Esqueleto de una página HTML5" class="d-block mx-auto">
+            <picture class="d-block mx-auto img-fluid" >
+              <source srcset="./img/esqueletoHTML400.JPG" media="(min-width: 768px)">
+                <source srcset="./img/esqueletoHTML320.JPG" media="(min-width: 576px)">
+                  <source srcset="./img/esqueletoHTML200.JPG" media="(max-width: 576px)">
+              <img src="./img/esqueletoHTML400.JPG" alt="Esqueleto de una página HTML5" class="d-block mx-auto img-fluid" />
+            </picture>
+            
           </div>
           <div class="row">
               <p>Un ejemplo de código en HTML5:</p>
               <pre>
-                        <code
-                          >&lt!DOCTYPE html>
-                          &lthtml lang="es">
-                          &lthead>
-                            &ltmeta charset="utf-8" />
-                            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"/>
-                            &lttitle>Ejemplo de HTML5</title>
-                          &lt/head>
+<code
+  >&lt!DOCTYPE html>
+  &lthtml lang="es">
+  &lthead>
+    &ltmeta charset="utf-8" />
+    &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    &lttitle>Ejemplo de HTML5</title>
+  &lt/head>
 
-                          &ltbody>
-                            &lth1>Esto es un título</h1>
-                            &ltp>Esto es un párrafo</p>
-                          &lt/body>
-                          &lt/html>
-                        </code>
-                      </pre>
+  &ltbody>
+    &lth1>Esto es un título</h1>
+    &ltp>Esto es un párrafo</p>
+  &lt/body>
+  &lt/html>
+</code>
+</pre>
           </div>
           
         </article>

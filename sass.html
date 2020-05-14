@@ -157,11 +157,25 @@
           </div>
           <div>
             <p>Ejemplo de variables en Sass:</p>
-            <img
-              src="./img/variablesSass.jpg"
-              alt="Código de variables en Sass"
-              class="mx-auto d-block captura-codigo"
-            />
+            <picture class="d-block mx-auto img-fluid">
+              <source
+                srcset="./img/variablesSass600.jpg"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/variablesSass480.jpg"
+                media="(min-width: 576px)"
+              />
+              <source
+                srcset="./img/variablesSass250.jpg"
+                media="(max-width: 576px)"
+              />
+              <img
+                src="./img/variablesSass600.jpg"
+                alt="Código de variables en Sass"
+                class="d-block mx-auto img-fluid"
+              />
+            </picture>
           </div>
         </article>
         <div class="col-sm-1"></div>

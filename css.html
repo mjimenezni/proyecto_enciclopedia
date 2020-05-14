@@ -178,7 +178,25 @@
             />
             <br />
             <p>Un <strong> ejemplo de hoja de estilos</strong>:</p>
-            <img src="./img/ejemploCSS.JPG" alt="Ejemplo de hoja de estilos" />
+            <picture class="d-block mx-auto img-fluid">
+              <source
+                srcset="./img/ejemploCSS450.JPG"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="./img/ejemploCSS360.JPG"
+                media="(min-width: 576px)"
+              />
+              <source
+                srcset="./img/ejemploCSS288.JPG"
+                media="(max-width: 576px)"
+              />
+              <img
+                src="./img/ejemploCSS450.JPG"
+                alt="Ejemplo de hoja de estilos"
+                class="d-block mx-auto img-fluid"
+              />
+            </picture>
           </div>
         </article>
         <div class="col-sm-1"></div>
