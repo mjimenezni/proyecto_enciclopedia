@@ -111,15 +111,12 @@ zoom {
   header h1 {
     font-size: 1.5em;
   }
-  header h4 {
-    font-size: 1em;
-  }
 }
 @media (max-width: 340px) {
   header h1 {
     font-size: 1.2em;
   }
-  header h4 {
+  header p {
     font-size: 0.7em;
   }
 }
