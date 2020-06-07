@@ -1,4 +1,5 @@
 header {
+  /*Por defecto cargo la imagen grande*/
   background: url('./img/desarrollo-web.jpg');
   margin: 0;
 }
@@ -103,6 +104,12 @@ zoom {
 }
 
 /*media queries*/
+/*@media (min-width: 577px) {
+  /*Para pantallas más grandes cargo la imagen mayor
+  header {
+    background: url('./img/desarrollo-web378.jpg');
+  }
+}*/
 @media (max-width: 576px) {
   .row {
     margin-left: 0px;
@@ -111,6 +118,10 @@ zoom {
   header h1 {
     font-size: 1.5em;
   }
+  header {
+    /*cargo la imagen intermedia*/
+    background: url('./img/desarrollo-web540.jpg');
+  }
 }
 @media (max-width: 340px) {
   header h1 {
@@ -118,5 +129,8 @@ zoom {
   }
   header p {
     font-size: 0.7em;
+  }
+  header {
+    background: url('./img/desarrollo-web378.jpg');
   }
 }

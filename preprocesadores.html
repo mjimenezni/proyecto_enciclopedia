@@ -10,9 +10,12 @@
       href="node_modules/bootstrap/dist/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="node_modules/jquery/dist/jquery.min.js"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js" defer></script>
+    <script src="node_modules/popper.js/dist/popper.min.js" defer></script>
+    <script
+      src="node_modules/bootstrap/dist/js/bootstrap.min.js"
+      defer
+    ></script>
   </head>
   <body>
     <!--header-->
@@ -134,11 +137,25 @@
     <footer class="container-fluid text-center">
       <div class="row justify-content-center align-items-center">
         <div class="col-sm-4">
-          <img
-            src="./img/desarrollo-web.jpg"
-            alt="Desarrollo front-end recortado con clip-path"
-            id="clipped"
-          />
+          <picture>
+            <source
+              srcset="./img/desarrollo-web.jpg"
+              media="(min-width: 577px)"
+            />
+            <source
+              srcset="./img/desarrollo-web540.jpg"
+              media="(min-width: 340px)"
+            />
+            <source
+              srcset="./img/desarrollo-web378.jpg"
+              media="(max-width: 340px)"
+            />
+            <img
+              src="./img/desarrollo-web.jpg"
+              alt="Desarrollo front-end recortado con clip-path"
+              id="clipped"
+            />
+          </picture>
         </div>
         <div class="col-sm-4">
           <h3>
